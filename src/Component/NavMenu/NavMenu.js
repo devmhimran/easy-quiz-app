@@ -12,8 +12,8 @@ const NavMenu = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
                             
-                            <Link className='mx-3' to='/'>Topic</Link>
-                            <Link className='mx-3' to='/statistics'>Statistics</Link>
+                            <Link className='mx-3 nav__link' to='/'>Topic</Link>
+                            <Link className='mx-3 nav__link' to='/statistics'>Statistics</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

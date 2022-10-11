@@ -6,12 +6,12 @@ import Statistics from './Component/Statistics/Statistics';
 
 function App() {
   return (
-    <div className="App">
-      <NavMenu/>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/statistics" element={<Statistics />} />
-      </Routes>
+    <div className="">
+      <NavMenu />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/statistics" element={<Statistics />} />
+        </Routes>
     </div>
   );
 }

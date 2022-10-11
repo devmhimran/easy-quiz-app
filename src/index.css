@@ -15,3 +15,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+.nav__link{
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+}
+.hero__main{
+  background-image:  linear-gradient(to bottom, rgba(243, 244, 251, 0), rgba(0, 0, 0, 2)), url('./Component/Assets/hero__image.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+.hero__heading{
+  font-size: 64px;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+}
+.hero__btn__container{
+  margin-top: 35px;
+  text-align: center;
+}
+.hero__btn{
+  text-decoration: none;
+  padding: 12px 32px;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: 0.4s ease;
+}
+.hero__btn:hover{
+  background-color: #fff;
+  color: #000;
+}
