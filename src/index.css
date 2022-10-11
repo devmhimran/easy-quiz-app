@@ -71,3 +71,10 @@ p{
 .quiz__quantity{
   font-size: 12px;
 }
+.quiz__main__container{
+  padding: 80px 0;
+}
+.quiz__main__title{
+  color: #1363DF;
+  font-weight: 700;
+}

@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Quiz = () => {
     const [quiz, setQuiz] = useState([]);
+    const navigate = useNavigate();
+    const handleQuiz = (id) =>{
+        navigate(`/quiz/${id}`)
+    }
     useEffect(() => {
         fetch('https://openapi.programming-hero.com/api/quiz')
             .then(res => res.json())
@@ -25,7 +30,7 @@ const Quiz = () => {
                                                 <p className='quiz__name'>{data.name}</p>
                                                 <p className='quiz__quantity'>{data.total} Quiz</p>
                                             </div>
-                                            <button className='btn btn-primary'>Start Practice</button>
+                                            <button className='btn btn-primary' onClick={()=> handleQuiz(data.id)}>Start Practice</button>
                                         </div>
                                     </div>
                                 </div>
