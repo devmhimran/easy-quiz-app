@@ -2,6 +2,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Component/Home/Home';
 import NavMenu from './Component/NavMenu/NavMenu';
+import Statistics from './Component/Statistics/Statistics';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <NavMenu/>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/statistics" element={<Statistics />} />
       </Routes>
     </div>
   );
