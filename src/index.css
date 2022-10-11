@@ -89,3 +89,20 @@ p{
   text-align: center;
   font-family: 'IBM Plex Mono', monospace !important; 
 }
+.option__container{
+  width: 100%;
+  padding: 30px;
+  margin: 6px;
+  /* background-color: aqua; */
+ border: 1px solid #1363DF;
+ border-radius: 10px;
+}
+.option__label{
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1363DF;
+}
+.option__container:hover{
+  background-color: #1365df2e;
+}

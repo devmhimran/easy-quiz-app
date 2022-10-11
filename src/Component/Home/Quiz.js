@@ -15,11 +15,11 @@ const Quiz = () => {
     return (
         <div className='quiz__main'>
             <div className="container">
-                <div className="row">
+                <div className="row g-3">
 
                     {
                         quiz.map(data =>
-                            <div key={data.id} className="col-md-4 col-lg-3 col-sm-12 gap-2">
+                            <div key={data.id} className="col-md-4 col-lg-3 col-sm-12">
                                 <div className="card w-100">
                                     <div className="card-body">
                                         <div className="quiz__image">

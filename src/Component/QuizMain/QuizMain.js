@@ -14,7 +14,7 @@ const QuizMain = () => {
     return (
         <div className='container quiz__main__container'>
             <h1 className='text-center quiz__main__title'>Quiz of {quizSingle.name}</h1>
-            <SingleQuiz quizSingle={quizSingle.questions}></SingleQuiz>
+            <SingleQuiz quizSingle={quizSingle.questions} ></SingleQuiz>
             
         </div>
     );
