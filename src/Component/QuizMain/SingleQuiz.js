@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
-import { Form } from 'react-bootstrap';
 import { toast, Toaster } from 'react-hot-toast';
 import { AiOutlineEye } from 'react-icons/ai';
 
 const SingleQuiz = ({ quizSingle }) => {
-    // console.log(quizSingle)
-    const [msg, setMsg] = useState('');
+    // console.log(quizSingle?.[0].options?.[0])
+    // const [msg, setMsg] = useState('');
     const [count, setCount] = useState(0);
+    let msg;
     const handleOption = (option) => {
-        console.log(option)
+        // console.log(option)
+        // quizSingle?.map((data, index) => data.correctAnswer === option ? toast.success('Correct') : toast.error("Wrong"))
         for (const correctAnswer of quizSingle) {
             if (option === correctAnswer.correctAnswer) {
                 setCount(count + 1)
+                toast.success('Correct')
+            }else{
+                toast.error("Wrong")
             }
         }
     }
@@ -21,6 +25,7 @@ const SingleQuiz = ({ quizSingle }) => {
     return (
         <div className="quiz__question__main">
             <div className="correct__answer__count">
+                {msg}
                 <div className="card border">
                     <div className="card-body">
                         <p className='correct__answer'>Correct Answer: {count}</p>
@@ -36,6 +41,7 @@ const SingleQuiz = ({ quizSingle }) => {
                             <div className='row mt-5'>
                                 {
                                     data?.options.map((option, index) =>
+                                       
                                         <div key={index} className="col-md-6 col-lg-6">
                                             <div className="form-check">
                                                 <input type="radio" id={option} value={option} className='input__radio' name='answer' />
