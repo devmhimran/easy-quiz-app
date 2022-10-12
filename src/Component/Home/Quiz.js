@@ -20,7 +20,7 @@ const Quiz = () => {
                     {
                         quiz.map(data =>
                             <div key={data.id} className="col-md-4 col-lg-3 col-sm-12">
-                                <div className="card w-100">
+                                <div className="card w-100 border">
                                     <div className="card-body">
                                         <div className="quiz__image">
                                             <img className='w-100 quiz__card' src={data.logo} alt="" />
@@ -45,19 +45,3 @@ const Quiz = () => {
 };
 
 export default Quiz;
-
-
-{/* <div className="card">
-                            <div className="card-body">
-                                <div className="quiz__image">
-                                    <img src="" alt="" />
-                                </div>
-                                <div className="quiz__detail">
-                                    <div className="quiz__container">
-                                        <p className='quiz__name'>React</p>
-                                        <p className='quiz__quantity'>30 quiz</p>
-                                    </div>
-                                    <button className='btn btn-primary'>Start Practice</button>
-                                </div>
-                            </div>
-                        </div> */}

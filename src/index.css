@@ -21,7 +21,7 @@ p{
 }
 .nav__link{
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
 }
 .logo__main{
@@ -163,6 +163,15 @@ input[type='radio']:checked + .option__container > .radio__box{
 .card{
   border: none !important;
 }
-.blog__main{
+.blog__main,
+.statistics__main
+{
   padding: 60px 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .hero__heading{
+    font-size: 26px;
+  }
 }
