@@ -19,7 +19,7 @@ const Quiz = () => {
 
                     {
                         quiz.map(data =>
-                            <div key={data.id} className="col-md-4 col-lg-3 col-sm-12">
+                            <div key={data.id} id='quiz' className="col-md-4 col-lg-3 col-sm-12">
                                 <div className="card w-100 border">
                                     <div className="card-body">
                                         <div className="quiz__image">

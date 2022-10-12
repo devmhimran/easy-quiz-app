@@ -12,7 +12,7 @@ const Hero = () => {
                             <h1 className='hero__heading'>Make Learning Awesome, Here your quiz app! </h1>
                             <p className='hero__sub__title'>Easy Quiz App delivers engaging Learning to <br /> billions</p>
                             <div className="hero__btn__container">
-                                <Link className='hero__btn' to='/'>Start Quiz</Link>
+                                <a className='hero__btn'  href="#quiz">Start Quiz</a>
                             </div>
                         </div>
                     </div>
