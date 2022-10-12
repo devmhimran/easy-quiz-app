@@ -5,7 +5,7 @@ import SingleQuiz from './SingleQuiz';
 const QuizMain = () => {
     const { id } = useParams();
     const [quizSingle, setQuizSingle] = useState([]);
-    console.log(quizSingle.questions)
+    // console.log(quizSingle.questions)
     useEffect(() => {
         fetch(`https://openapi.programming-hero.com/api/quiz/${id}`)
             .then(res => res.json())
