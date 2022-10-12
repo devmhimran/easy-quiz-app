@@ -3,21 +3,14 @@ import { toast, Toaster } from 'react-hot-toast';
 import { AiOutlineEye } from 'react-icons/ai';
 
 const SingleQuiz = ({ quizSingle }) => {
-    // console.log(quizSingle?.[0].options?.[0])
-    // const [msg, setMsg] = useState('');
     const [count, setCount] = useState(0);
-    let msg;
     const handleOption = (option) => {
-        // console.log(option)
-        // quizSingle?.map((data, index) => data.correctAnswer === option ? toast.success('Correct') : toast.error("Wrong"))
         for (const correctAnswer of quizSingle) {
             if (option === correctAnswer.correctAnswer) {
                 setCount(count + 1)
-                toast.success('Correct')
-            }else{
-                toast.error("Wrong")
             }
         }
+        
     }
     const handleAnswer = (answer) => {
         toast.success('Answer is ' + answer)
@@ -25,7 +18,6 @@ const SingleQuiz = ({ quizSingle }) => {
     return (
         <div className="quiz__question__main">
             <div className="correct__answer__count">
-                {msg}
                 <div className="card border">
                     <div className="card-body">
                         <p className='correct__answer'>Correct Answer: {count}</p>
@@ -50,9 +42,6 @@ const SingleQuiz = ({ quizSingle }) => {
                                                     <p className='option__label'>{option}</p>
                                                 </label>
                                             </div>
-
-
-
                                         </div>
                                     )
                                 }
