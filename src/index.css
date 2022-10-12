@@ -24,23 +24,32 @@ p{
   font-size: 18px;
   color: #000;
 }
+.logo__main{
+  font-weight: 800;
+}
+.logo__main span{
+  color: #1363DF;
+}
 .hero__main{
-  background-image:  linear-gradient(to bottom, rgba(243, 244, 251, 0), rgba(0, 0, 0, 2)), url('./Component/Assets/hero__image.jpg');
-  background-position: center;
-  background-size: cover;
-  height: 500px;
+  background-color: #1363DF;
+  padding: 60px 0;
+}
+.hero__left{
   display: flex;
   align-items: center;
 }
 .hero__heading{
   font-size: 64px;
+  font-weight: 600;
   color: #fff;
-  text-align: center;
   text-transform: capitalize;
+}
+.hero__sub__title{
+  font-size: 20px;
+  color: #fff;
 }
 .hero__btn__container{
   margin-top: 35px;
-  text-align: center;
 }
 .hero__btn{
   text-decoration: none;
@@ -79,11 +88,11 @@ p{
   
 }
 .quiz__main__title{
-  color: #1363DF;
+  color: #000;
   font-weight: 700;
 }
 .quiz__question{
-  color: #1363DF;
+  color: #000;
   font-weight: 600;
   font-size: 18px;
   text-align: center;

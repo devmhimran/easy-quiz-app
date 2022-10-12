@@ -7,7 +7,7 @@ const NavMenu = () => {
         <div>
             <Navbar bg="light" expand="lg">
                 <Container>
-                    <Navbar.Brand href="/">Easy Quiz App</Navbar.Brand>
+                    <Navbar.Brand className='logo__main' href="/">Easy Quiz <span>App</span></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
