@@ -163,3 +163,6 @@ input[type='radio']:checked + .option__container > .radio__box{
 .card{
   border: none !important;
 }
+.blog__main{
+  padding: 60px 0;
+}

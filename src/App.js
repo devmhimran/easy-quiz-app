@@ -4,6 +4,7 @@ import Home from './Component/Home/Home';
 import NavMenu from './Component/NavMenu/NavMenu';
 import Statistics from './Component/Statistics/Statistics';
 import QuizMain from './Component/QuizMain/QuizMain';
+import Blog from './Component/Blog/Blog';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/statistics" element={<Statistics />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/quiz/:id" element={<QuizMain/>} />
         </Routes>
     </div>

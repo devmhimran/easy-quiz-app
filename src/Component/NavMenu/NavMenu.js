@@ -14,6 +14,7 @@ const NavMenu = () => {
                             
                             <Link className='mx-3 nav__link' to='/'>Topic</Link>
                             <Link className='mx-3 nav__link' to='/statistics'>Statistics</Link>
+                            <Link className='mx-3 nav__link' to='/blog'>Blog</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
